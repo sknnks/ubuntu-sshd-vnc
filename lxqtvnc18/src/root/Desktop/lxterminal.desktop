@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=LXTerminal
+Name[zh_CN]=LX 终端
+GenericName=Terminal
+GenericName[zh_CN]=终端
+Comment=Use the command line
+Comment[zh_CN]=使用命令行
+TryExec=lxterminal
+Exec=lxterminal
+Icon=lxterminal
+Type=Application
+Categories=GTK;System;TerminalEmulator;
+Keywords=console;command line;execute;
+Keywords[zh_CN]=console;command line;execute;终端;命令行;执行;

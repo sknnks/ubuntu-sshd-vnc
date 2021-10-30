@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Icon=system-file-manager
+Name=PCManFM
+Name[zh_CN]=文件管理器 PCManFM
+GenericName=File Manager
+GenericName[zh_CN]=文件管理器
+Comment=Browse the file system and manage the files
+Comment[zh_CN]=浏览文件系统和管理文件
+Categories=System;FileTools;FileManager;Utility;Core;GTK;
+Exec=pcmanfm %U
+StartupNotify=true
+Terminal=false
+MimeType=inode/directory;

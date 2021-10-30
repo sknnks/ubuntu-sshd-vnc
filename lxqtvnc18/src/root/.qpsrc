@@ -1,0 +1,23 @@
+[General]
+field=PID, TTY, USER, STAT, MEM, %CPU, START, TIME, COMMAND_LINE
+flags=ExitOnClose, infobar, ctrlbar, statbar, autosave, cpubar, loadgraph, loadicon, selectpids, hostname, service
+interval=1300
+version=40
+viewproc=0
+
+[commands]
+size=0
+
+[font]
+name=Ubuntu
+size=13
+
+[geometry]
+height=741
+visiable=true
+width=1280
+x=0
+y=27
+
+[watchdog]
+size=0

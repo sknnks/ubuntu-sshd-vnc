@@ -1,0 +1,57 @@
+name: build main
+on:    
+  push:
+    branches: [ main ]
+  watch:
+    types: started
+  schedule:
+   - cron: '1 1 1 * *' # Runs at 01:01 UTC on the 1st of every month.
+jobs:
+  publish-lxqt18:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Publish to docker hub
+      uses: elgohr/Publish-Docker-Github-Action@master
+      with:
+        name: ${{ secrets.DOCKER_REPO }}
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        workdir: lxqtvnc18
+        tags: "latest,vnc18lxqt"
+  publish-lxde18:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Publish to docker hub
+      uses: elgohr/Publish-Docker-Github-Action@master
+      with:
+        name: ${{ secrets.DOCKER_REPO }}
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        workdir: lxdevnc18
+        tags: "vnc18lxde"
+  publish-lxqt20:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Publish to docker hub
+      uses: elgohr/Publish-Docker-Github-Action@master
+      with:
+        name: ${{ secrets.DOCKER_REPO }}
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        workdir: lxqtvnc20
+        tags: "vnc20lxqt"
+  publish-lxde20:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Publish to docker hub
+      uses: elgohr/Publish-Docker-Github-Action@master
+      with:
+        name: ${{ secrets.DOCKER_REPO }}
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        workdir: lxdevnc20
+        tags: "vnc20lxde"

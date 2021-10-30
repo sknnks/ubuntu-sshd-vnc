@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Leafpad
+Comment=Simple text editor
+Comment[zh_CN]=简易文字编辑器
+Exec=leafpad %f
+Icon=leafpad
+Terminal=false
+Type=Application
+MimeType=text/plain
+Categories=GTK;Utility;TextEditor;
+Keywords=text;editor;
+InitialPreference=6

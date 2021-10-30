@@ -1,0 +1,5 @@
+[Default Applications]
+text/plain=featherpad.desktop
+
+[Added Associations]
+text/plain=featherpad.desktop;

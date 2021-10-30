@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=FeatherPad
+GenericName=Text Editor
+Comment[zh_CN]=轻量级 Qt5 文本编辑器
+Exec=featherpad %F
+Icon=featherpad
+Terminal=false
+Type=Application
+MimeType=text/plain;
+Categories=Qt;Utility;TextEditor;
+X-KDE-StartupNotify=false

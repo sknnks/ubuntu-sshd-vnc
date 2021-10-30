@@ -1,0 +1,36 @@
+[Desktop Entry]
+Version=1.0
+Name=Chromium Web Browser
+Name[zh_CN]=Chromium 网页浏览器
+GenericName=Web Browser
+GenericName[zh_CN]=网页浏览器
+Comment=Access the Internet
+Comment[zh_CN]=访问互联网
+Exec=chromium-browser %U
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=chromium-browser
+Categories=Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml_xml;x-scheme-handler/http;x-scheme-handler/https;
+StartupWMClass=Chromium-browser
+StartupNotify=true
+Actions=NewWindow;Incognito;TempProfile;
+X-AppInstall-Package=chromium-browser
+
+Path=
+
+[Desktop Action NewWindow]
+Name=Open a New Window
+Name[zh_CN]=打开新窗口
+Exec=chromium-browser
+
+[Desktop Action Incognito]
+Name=Open a New Window in incognito mode
+Name[zh_CN]=以隐身模式打开新窗口
+Exec=chromium-browser --incognito
+
+[Desktop Action TempProfile]
+Name=Open a New Window with a temporary profile
+Name[zh_CN]=以临时配置文件打开新窗口
+Exec=chromium-browser --temp-profile

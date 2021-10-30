@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Link
+Name=Vim
+Icon=gvim
+URL=/usr/share/applications/vim.desktop

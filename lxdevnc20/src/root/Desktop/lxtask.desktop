@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=Task Manager
+Name[zh_CN]=任务管理器
+Comment=Manage running processes
+Comment[zh_CN]=管理运行中的进程
+GenericName=Process manager
+GenericName[zh_CN]=进程管理器
+Keywords=task;kill;suspend;processor;memory;monitoring;performance;
+Keywords[zh_CN]=task;kill;suspend;processor;memory;monitoring;performance;任务;终止;杀死;挂起;进程;内存;监视;性能;
+Exec=lxtask
+Icon=utilities-system-monitor
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=GTK;System;Monitor;
