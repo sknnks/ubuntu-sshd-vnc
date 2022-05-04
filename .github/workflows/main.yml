@@ -5,7 +5,7 @@ on:
   watch:
     types: started
   schedule:
-   - cron: '3 2 1 * *' # Runs at 01:01 UTC on the 1st of every month.
+   - cron: '3 1 1 * *' # Runs at 01:01 UTC on the 1st of every month.
 jobs:
   publish-lxqt18:
     runs-on: ubuntu-latest
