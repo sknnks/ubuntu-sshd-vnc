@@ -87,7 +87,7 @@ RUN apt-get update && apt-get install git -yq \
 RUN sed -Ei 's/^# deb-src /deb-src /' /etc/apt/sources.list
 RUN apt-get update && apt-get build-dep x11vnc -yq
 
-RUN cd /root && git clone git://github.com/LibVNC/x11vnc \
+RUN cd /root && git clone https://github.com/LibVNC/x11vnc \
 	&& cd /root/x11vnc/ \
 	&& autoreconf -fiv \
 	&& ./configure \
